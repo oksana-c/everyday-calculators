@@ -56,7 +56,7 @@ const AgeCalculator = () => {
               type="date"
               value={birthDate}
               onChange={(e) => setBirthDate(e.target.value)}
-              className="w-full h-10 px-4 bg-card border-b-2 border-border text-sm text-foreground focus:border-primary focus:outline-none transition-colors"
+              className="w-full h-12 px-4 bg-card border-b-2 border-border text-base text-foreground focus:border-primary focus:outline-none transition-colors"
             />
           </div>
           <div>
@@ -65,7 +65,7 @@ const AgeCalculator = () => {
               type="date"
               value={targetDate}
               onChange={(e) => setTargetDate(e.target.value)}
-              className="w-full h-10 px-4 bg-card border-b-2 border-border text-sm text-foreground focus:border-primary focus:outline-none transition-colors"
+              className="w-full h-12 px-4 bg-card border-b-2 border-border text-base text-foreground focus:border-primary focus:outline-none transition-colors"
             />
           </div>
         </div>
@@ -74,22 +74,22 @@ const AgeCalculator = () => {
         <div className="p-6 bg-card border border-border mb-6">
           <span className="carbon-label-01 block mb-2">Your age</span>
           {result ? (
-            <div className="flex items-baseline gap-1">
-              <span className="text-3xl font-light text-foreground font-mono">
+            <div className="flex items-baseline gap-1 flex-wrap">
+              <span className="text-4xl font-light text-foreground font-mono">
                 {result.years}
               </span>
-              <span className="text-sm text-muted-foreground mr-3">years</span>
-              <span className="text-3xl font-light text-foreground font-mono">
+              <span className="text-base text-muted-foreground mr-3">years</span>
+              <span className="text-4xl font-light text-foreground font-mono">
                 {result.months}
               </span>
-              <span className="text-sm text-muted-foreground mr-3">months</span>
-              <span className="text-3xl font-light text-foreground font-mono">
+              <span className="text-base text-muted-foreground mr-3">months</span>
+              <span className="text-4xl font-light text-foreground font-mono">
                 {result.days}
               </span>
-              <span className="text-sm text-muted-foreground">days</span>
+              <span className="text-base text-muted-foreground">days</span>
             </div>
           ) : (
-            <span className="text-3xl font-light text-foreground font-mono">—</span>
+            <span className="text-4xl font-light text-foreground font-mono">—</span>
           )}
         </div>
 
@@ -109,7 +109,7 @@ const AgeCalculator = () => {
 const StatCard = ({ label, value }: { label: string; value: string }) => (
   <div className="bg-card p-4">
     <span className="carbon-label-01 block mb-1">{label}</span>
-    <span className="text-xl font-light text-foreground font-mono">{value}</span>
+    <span className="text-2xl font-light text-foreground font-mono">{value}</span>
   </div>
 );
 

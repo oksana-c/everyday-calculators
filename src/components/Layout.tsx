@@ -16,14 +16,14 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="max-w-7xl mx-auto flex items-center h-12 px-4 lg:px-8">
           <Link to="/" className="flex items-center gap-2 text-primary-foreground">
             <Calculator className="h-5 w-5" />
-            <span className="text-sm font-semibold tracking-tight">
+            <span className="text-base font-semibold tracking-tight">
               Calculators for Life
             </span>
           </Link>
           <nav className="ml-8 flex items-center gap-1">
             <Link
               to="/"
-              className={`px-4 h-12 flex items-center text-sm transition-colors border-b-2 ${
+              className={`px-4 h-12 flex items-center text-base transition-colors border-b-2 ${
                 isHome
                   ? "border-primary text-primary-foreground"
                   : "border-transparent text-muted-foreground hover:text-primary-foreground"

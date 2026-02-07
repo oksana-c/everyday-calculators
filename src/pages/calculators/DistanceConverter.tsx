@@ -67,7 +67,7 @@ const DistanceConverter = () => {
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               placeholder="e.g. 10"
-              className="w-full h-10 px-4 bg-card border-b-2 border-border text-sm text-foreground placeholder:text-carbon-text-placeholder focus:border-primary focus:outline-none transition-colors"
+              className="w-full h-12 px-4 bg-card border-b-2 border-border text-base text-foreground placeholder:text-carbon-text-placeholder focus:border-primary focus:outline-none transition-colors"
             />
           </div>
 
@@ -76,7 +76,7 @@ const DistanceConverter = () => {
             <select
               value={fromUnit}
               onChange={(e) => setFromUnit(e.target.value)}
-              className="w-full h-10 px-4 bg-card border-b-2 border-border text-sm text-foreground focus:border-primary focus:outline-none transition-colors appearance-none cursor-pointer"
+              className="w-full h-12 px-4 bg-card border-b-2 border-border text-base text-foreground focus:border-primary focus:outline-none transition-colors appearance-none cursor-pointer"
             >
               {Object.entries(grouped).map(([category, categoryUnits]) => (
                 <optgroup key={category} label={category}>
@@ -93,7 +93,7 @@ const DistanceConverter = () => {
           <div className="flex justify-center">
             <button
               onClick={swapUnits}
-              className="px-4 py-2 text-sm text-primary hover:bg-accent transition-colors"
+              className="px-4 py-2 text-base text-primary hover:bg-accent transition-colors"
             >
               ↕ Swap units
             </button>
@@ -104,7 +104,7 @@ const DistanceConverter = () => {
             <select
               value={toUnit}
               onChange={(e) => setToUnit(e.target.value)}
-              className="w-full h-10 px-4 bg-card border-b-2 border-border text-sm text-foreground focus:border-primary focus:outline-none transition-colors appearance-none cursor-pointer"
+              className="w-full h-12 px-4 bg-card border-b-2 border-border text-base text-foreground focus:border-primary focus:outline-none transition-colors appearance-none cursor-pointer"
             >
               {Object.entries(grouped).map(([category, categoryUnits]) => (
                 <optgroup key={category} label={category}>
@@ -123,11 +123,11 @@ const DistanceConverter = () => {
         <div className="p-6 bg-card border border-border">
           <span className="carbon-label-01 block mb-2">Result</span>
           <div className="flex items-baseline gap-2">
-            <span className="text-3xl font-light text-foreground font-mono">
+            <span className="text-4xl font-light text-foreground font-mono">
               {result ?? "—"}
             </span>
             {result && (
-              <span className="text-sm text-muted-foreground">
+              <span className="text-base text-muted-foreground">
                 {toUnit.replace(/\(.*\)/, "").trim().toLowerCase()}
               </span>
             )}

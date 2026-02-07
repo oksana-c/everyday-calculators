@@ -65,7 +65,7 @@ const PercentageCalculator = () => {
             <button
               key={m.key}
               onClick={() => setMode(m.key)}
-              className={`px-4 py-3 text-sm font-medium transition-colors border-b-2 -mb-px ${
+              className={`px-4 py-3 text-base font-medium transition-colors border-b-2 -mb-px ${
                 mode === m.key
                   ? "border-primary text-foreground"
                   : "border-transparent text-muted-foreground hover:text-foreground"
@@ -140,7 +140,7 @@ const PercentageCalculator = () => {
         {/* Result */}
         <div className="mt-8 p-6 bg-card border border-border">
           <span className="carbon-label-01 block mb-2">Result</span>
-          <span className="text-3xl font-light text-foreground font-mono">
+          <span className="text-4xl font-light text-foreground font-mono">
             {result ?? "—"}
           </span>
         </div>
@@ -161,14 +161,14 @@ const InputField = ({
   onChange: (v: string) => void;
   placeholder: string;
 }) => (
-  <div>
+<div>
     <label className="carbon-label-01 block mb-1.5">{label}</label>
     <input
       type="number"
       value={value}
       onChange={(e) => onChange(e.target.value)}
       placeholder={placeholder}
-      className="w-full h-10 px-4 bg-card border-b-2 border-border text-sm text-foreground placeholder:text-carbon-text-placeholder focus:border-primary focus:outline-none transition-colors"
+      className="w-full h-12 px-4 bg-card border-b-2 border-border text-base text-foreground placeholder:text-carbon-text-placeholder focus:border-primary focus:outline-none transition-colors"
     />
   </div>
 );
