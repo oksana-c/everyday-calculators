@@ -9,10 +9,10 @@ const Index = () => {
       <section className="border-b border-border bg-card">
         <div className="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
           <h1 className="carbon-productive-heading-07 text-foreground max-w-xl">
-            Calculators for everyday life
+            Everyday Calculators
           </h1>
           <p className="carbon-body-02 text-muted-foreground mt-4 max-w-lg">
-            A growing collection of free, simple calculators for percentages, cooking conversions, dates, and more.
+            A growing collection of calculators for percentages, cooking conversions, dates, and more.
           </p>
         </div>
       </section>
