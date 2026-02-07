@@ -28,7 +28,7 @@
 
     /* Cool Gray 10 */
     --muted: 210 17% 95%;
-    --muted-foreground: 215 12% 47%;
+    --muted-foreground: 215 14% 35%;
 
     /* Blue 10 */
     --accent: 214 92% 95%;
@@ -48,10 +48,10 @@
     --carbon-layer-01: 210 17% 98%;
     --carbon-layer-02: 210 14% 93%;
     --carbon-layer-hover: 210 14% 89%;
-    --carbon-text-helper: 215 12% 47%;
-    --carbon-text-placeholder: 210 10% 71%;
+    --carbon-text-helper: 215 14% 35%;
+    --carbon-text-placeholder: 210 10% 55%;
     --carbon-icon-primary: 210 29% 13%;
-    --carbon-icon-secondary: 215 14% 34%;
+    --carbon-icon-secondary: 215 14% 25%;
     --carbon-support-success: 161 100% 26%;
     --carbon-support-warning: 30 100% 50%;
     --carbon-support-info: 214 84% 56%;
@@ -131,36 +131,36 @@
 
 @layer utilities {
   .carbon-productive-heading-01 {
-    @apply text-sm font-semibold leading-tight tracking-tight;
+    @apply text-base font-semibold leading-tight tracking-tight;
   }
   .carbon-productive-heading-02 {
-    @apply text-base font-semibold leading-snug tracking-tight;
+    @apply text-lg font-semibold leading-snug tracking-tight;
   }
   .carbon-productive-heading-03 {
-    @apply text-xl font-semibold leading-7 tracking-tight;
+    @apply text-2xl font-semibold leading-7 tracking-tight;
   }
   .carbon-productive-heading-04 {
-    @apply text-2xl font-semibold leading-8;
+    @apply text-3xl font-semibold leading-8;
   }
   .carbon-productive-heading-05 {
-    @apply text-[2rem] font-light leading-10;
+    @apply text-[2.25rem] font-light leading-10;
   }
   .carbon-productive-heading-06 {
-    @apply text-[2.625rem] font-light leading-[3.25rem];
+    @apply text-[3rem] font-light leading-[3.5rem];
   }
   .carbon-productive-heading-07 {
-    @apply text-[3.375rem] font-light leading-tight;
+    @apply text-[3.75rem] font-light leading-tight;
   }
   .carbon-body-01 {
-    @apply text-sm leading-5;
-  }
-  .carbon-body-02 {
     @apply text-base leading-6;
   }
+  .carbon-body-02 {
+    @apply text-lg leading-7;
+  }
   .carbon-label-01 {
-    @apply text-xs leading-4 text-muted-foreground;
+    @apply text-sm leading-5 text-muted-foreground font-medium;
   }
   .carbon-helper-text {
-    @apply text-xs leading-4 text-muted-foreground;
+    @apply text-sm leading-5 text-muted-foreground;
   }
 }
