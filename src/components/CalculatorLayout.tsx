@@ -21,7 +21,7 @@ const CalculatorLayout = ({
       {/* Breadcrumb bar */}
       <div className="border-b border-border bg-card">
         <div className="max-w-7xl mx-auto px-4 lg:px-8 py-3">
-          <nav className="flex items-center gap-2 text-sm">
+          <nav className="flex items-center gap-2 text-base">
             <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
               Home
             </Link>
@@ -40,7 +40,7 @@ const CalculatorLayout = ({
         <div className="max-w-7xl mx-auto px-4 lg:px-8 py-8">
           <Link
             to="/"
-            className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline mb-4"
+            className="inline-flex items-center gap-1.5 text-base text-primary hover:underline mb-4"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to all calculators
