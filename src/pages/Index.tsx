@@ -40,7 +40,7 @@ const Index = () => {
               </p>
 
               {/* Calculator grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {calcs.map((calc) => (
                   <CalculatorCard key={calc.id} calculator={calc} />
                 ))}

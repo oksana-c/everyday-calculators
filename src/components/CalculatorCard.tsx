@@ -12,11 +12,11 @@ const CalculatorCard = ({ calculator }: CalculatorCardProps) => {
   return (
     <Link
       to={calculator.path}
-      className="group block bg-card border border-border hover:shadow-md transition-all duration-150"
+      className="group block bg-card border border-border rounded-sm hover:shadow-md hover:border-primary/40 transition-all duration-150"
     >
       <div className="p-5">
         <div className="flex items-start justify-between mb-3">
-          <div className="p-2 bg-accent">
+          <div className="p-2 bg-accent rounded-sm">
             <Icon className="h-5 w-5 text-accent-foreground" />
           </div>
           <ArrowRight className="h-4 w-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity -translate-x-1 group-hover:translate-x-0 duration-150" />
@@ -28,7 +28,7 @@ const CalculatorCard = ({ calculator }: CalculatorCardProps) => {
           {calculator.description}
         </p>
       </div>
-      <div className="h-[2px] bg-transparent group-hover:bg-primary transition-colors duration-150" />
+      <div className="h-[2px] bg-transparent group-hover:bg-primary transition-colors duration-150 rounded-b-sm" />
     </Link>
   );
 };

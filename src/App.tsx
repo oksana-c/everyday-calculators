@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import PercentageCalculator from "./pages/calculators/PercentageCalculator";
 import AgeCalculator from "./pages/calculators/AgeCalculator";
 import CookingUnitConverter from "./pages/calculators/CookingUnitConverter";
+import DistanceConverter from "./pages/calculators/DistanceConverter";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
             <Route path="/calculators/utility/percentage" element={<PercentageCalculator />} />
             <Route path="/calculators/date-time/age" element={<AgeCalculator />} />
             <Route path="/calculators/cooking/unit-converter" element={<CookingUnitConverter />} />
+            <Route path="/calculators/utility/distance-converter" element={<DistanceConverter />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
