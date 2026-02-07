@@ -46,9 +46,6 @@ const CalculatorLayout = ({
             Back to all calculators
           </Link>
           <h1 className="carbon-productive-heading-05 text-foreground">{title}</h1>
-          <p className="carbon-body-02 text-muted-foreground mt-2 max-w-2xl">
-            {description}
-          </p>
         </div>
       </div>
 

@@ -49,7 +49,7 @@
     --carbon-layer-02: 210 14% 93%;
     --carbon-layer-hover: 210 14% 89%;
     --carbon-text-helper: 215 14% 35%;
-    --carbon-text-placeholder: 210 10% 55%;
+    --carbon-text-placeholder: 210 12% 42%;
     --carbon-icon-primary: 210 29% 13%;
     --carbon-icon-secondary: 215 14% 25%;
     --carbon-support-success: 161 100% 26%;
@@ -158,9 +158,9 @@
     @apply text-lg leading-7;
   }
   .carbon-label-01 {
-    @apply text-sm leading-5 text-muted-foreground font-medium;
+    @apply text-lg leading-6 text-foreground font-semibold;
   }
   .carbon-helper-text {
-    @apply text-sm leading-5 text-muted-foreground;
+    @apply text-base leading-5 text-muted-foreground;
   }
 }
