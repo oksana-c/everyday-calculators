@@ -1,4 +1,4 @@
-import { Calculator, ChefHat, Clock, Percent, Ruler, Heart, DollarSign, LucideIcon } from "lucide-react";
+import { Calculator, ChefHat, Clock, Percent, Ruler, Heart, DollarSign, MoveHorizontal, LucideIcon } from "lucide-react";
 
 export interface CalculatorInfo {
   id: string;
@@ -48,6 +48,14 @@ export const calculators: CalculatorInfo[] = [
     description: "Calculate percentages, percentage change, and percentage of a number.",
     path: "/calculators/utility/percentage",
     icon: Percent,
+    category: "utility",
+  },
+  {
+    id: "distance-converter",
+    name: "Distance Converter",
+    description: "Convert between metric and imperial distance units like miles, kilometers, feet and more.",
+    path: "/calculators/utility/distance-converter",
+    icon: MoveHorizontal,
     category: "utility",
   },
   {
