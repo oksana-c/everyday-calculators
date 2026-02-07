@@ -1,96 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* IBM Carbon Design System Tokens */
 
 @layer base {
   :root {
+    /* IBM Carbon Cool Gray palette */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 29% 13%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 210 17% 98%;
+    --card-foreground: 210 29% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 29% 13%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* IBM Blue 60 */
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Cool Gray 20 */
+    --secondary: 210 14% 93%;
+    --secondary-foreground: 210 29% 13%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Cool Gray 10 */
+    --muted: 210 17% 95%;
+    --muted-foreground: 215 12% 47%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Blue 10 */
+    --accent: 214 92% 95%;
+    --accent-foreground: 214 84% 40%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Red 60 */
+    --destructive: 0 75% 42%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 14% 89%;
+    --input: 210 14% 89%;
+    --ring: 214 84% 56%;
 
-    --radius: 0.5rem;
+    --radius: 0px;
 
-    --sidebar-background: 0 0% 98%;
+    /* Carbon specific tokens */
+    --carbon-layer-01: 210 17% 98%;
+    --carbon-layer-02: 210 14% 93%;
+    --carbon-layer-hover: 210 14% 89%;
+    --carbon-text-helper: 215 12% 47%;
+    --carbon-text-placeholder: 210 10% 71%;
+    --carbon-icon-primary: 210 29% 13%;
+    --carbon-icon-secondary: 215 14% 34%;
+    --carbon-support-success: 161 100% 26%;
+    --carbon-support-warning: 30 100% 50%;
+    --carbon-support-info: 214 84% 56%;
+    --carbon-interactive: 214 84% 56%;
+    --carbon-tag-bg-blue: 214 92% 95%;
+    --carbon-tag-text-blue: 214 84% 40%;
+    --carbon-tag-bg-green: 161 80% 93%;
+    --carbon-tag-text-green: 161 100% 20%;
+    --carbon-tag-bg-warm: 30 80% 93%;
+    --carbon-tag-text-warm: 30 80% 30%;
+    --carbon-tag-bg-purple: 270 70% 94%;
+    --carbon-tag-text-purple: 270 60% 40%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 210 29% 13%;
+    --sidebar-foreground: 210 17% 95%;
+    --sidebar-primary: 214 84% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 213 27% 20%;
+    --sidebar-accent-foreground: 210 17% 95%;
+    --sidebar-border: 213 27% 20%;
+    --sidebar-ring: 214 84% 56%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 210 29% 10%;
+    --foreground: 210 17% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 213 27% 14%;
+    --card-foreground: 210 17% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 213 27% 14%;
+    --popover-foreground: 210 17% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 213 27% 20%;
+    --secondary-foreground: 210 17% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 213 27% 17%;
+    --muted-foreground: 210 10% 71%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 213 27% 20%;
+    --accent-foreground: 214 84% 70%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 213 27% 20%;
+    --input: 213 27% 20%;
+    --ring: 214 84% 56%;
+
+    --sidebar-background: 210 29% 8%;
+    --sidebar-foreground: 210 17% 95%;
+    --sidebar-primary: 214 84% 56%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 213 27% 15%;
+    --sidebar-accent-foreground: 210 17% 95%;
+    --sidebar-border: 213 27% 15%;
+    --sidebar-ring: 214 84% 56%;
   }
 }
 
@@ -100,6 +121,46 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .carbon-productive-heading-01 {
+    @apply text-sm font-semibold leading-tight tracking-tight;
+  }
+  .carbon-productive-heading-02 {
+    @apply text-base font-semibold leading-snug tracking-tight;
+  }
+  .carbon-productive-heading-03 {
+    @apply text-xl font-semibold leading-7 tracking-tight;
+  }
+  .carbon-productive-heading-04 {
+    @apply text-2xl font-semibold leading-8;
+  }
+  .carbon-productive-heading-05 {
+    @apply text-[2rem] font-light leading-10;
+  }
+  .carbon-productive-heading-06 {
+    @apply text-[2.625rem] font-light leading-[3.25rem];
+  }
+  .carbon-productive-heading-07 {
+    @apply text-[3.375rem] font-light leading-tight;
+  }
+  .carbon-body-01 {
+    @apply text-sm leading-5;
+  }
+  .carbon-body-02 {
+    @apply text-base leading-6;
+  }
+  .carbon-label-01 {
+    @apply text-xs leading-4 text-muted-foreground;
+  }
+  .carbon-helper-text {
+    @apply text-xs leading-4 text-muted-foreground;
   }
 }

@@ -1,12 +1,54 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { categories, getCalculatorsByCategory } from "@/data/calculators";
+import CalculatorCard from "@/components/CalculatorCard";
+import { CategoryTag } from "@/components/CategoryTag";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="animate-fade-in">
+      {/* Hero section */}
+      <section className="border-b border-border bg-card">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-16">
+          <h1 className="carbon-productive-heading-07 text-foreground max-w-xl">
+            Calculators for everyday life
+          </h1>
+          <p className="carbon-body-02 text-muted-foreground mt-4 max-w-lg">
+            A growing collection of free, simple calculators for percentages, cooking conversions, dates, and more.
+          </p>
+        </div>
+      </section>
+
+      {/* Categories */}
+      <section className="max-w-7xl mx-auto px-4 lg:px-8 py-10">
+        {categories.map((category) => {
+          const calcs = getCalculatorsByCategory(category.id);
+          if (calcs.length === 0) return null;
+
+          const Icon = category.icon;
+
+          return (
+            <div key={category.id} className="mb-12 last:mb-0">
+              {/* Category header */}
+              <div className="flex items-center gap-3 mb-2">
+                <Icon className="h-5 w-5 text-carbon-icon-secondary" />
+                <h2 className="carbon-productive-heading-03 text-foreground">
+                  {category.name}
+                </h2>
+                <CategoryTag category={category} />
+              </div>
+              <p className="carbon-body-01 text-muted-foreground mb-5 ml-8">
+                {category.description}
+              </p>
+
+              {/* Calculator grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+                {calcs.map((calc) => (
+                  <CalculatorCard key={calc.id} calculator={calc} />
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </section>
     </div>
   );
 };
