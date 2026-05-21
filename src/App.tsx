@@ -27,6 +27,7 @@ const App = () => (
             <Route path="/calculators/date-time/age" element={<AgeCalculator />} />
             <Route path="/calculators/cooking/unit-converter" element={<CookingUnitConverter />} />
             <Route path="/calculators/utility/distance-converter" element={<DistanceConverter />} />
+            <Route path="/calculators/utility/weight-converter" element={<WeightConverter />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
