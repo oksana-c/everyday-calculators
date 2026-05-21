@@ -10,6 +10,7 @@ import PercentageCalculator from "./pages/calculators/PercentageCalculator";
 import AgeCalculator from "./pages/calculators/AgeCalculator";
 import CookingUnitConverter from "./pages/calculators/CookingUnitConverter";
 import DistanceConverter from "./pages/calculators/DistanceConverter";
+import WeightConverter from "./pages/calculators/WeightConverter";
 
 const queryClient = new QueryClient();
 
