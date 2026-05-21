@@ -1,4 +1,4 @@
-import { Calculator, ChefHat, Clock, Percent, Ruler, Heart, DollarSign, MoveHorizontal, LucideIcon } from "lucide-react";
+import { Calculator, ChefHat, Clock, Percent, Ruler, Heart, DollarSign, MoveHorizontal, Scale, LucideIcon } from "lucide-react";
 
 export interface CalculatorInfo {
   id: string;
@@ -56,6 +56,14 @@ export const calculators: CalculatorInfo[] = [
     description: "Convert between metric and imperial distance units like miles, kilometers, feet and more.",
     path: "/calculators/utility/distance-converter",
     icon: MoveHorizontal,
+    category: "utility",
+  },
+  {
+    id: "weight-converter",
+    name: "Weight Converter",
+    description: "Convert decimal pounds into a readable pounds and ounces value, plus grams and kilograms.",
+    path: "/calculators/utility/weight-converter",
+    icon: Scale,
     category: "utility",
   },
   {
