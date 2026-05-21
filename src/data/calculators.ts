@@ -59,6 +59,14 @@ export const calculators: CalculatorInfo[] = [
     category: "utility",
   },
   {
+    id: "weight-converter",
+    name: "Weight Converter",
+    description: "Convert decimal pounds into a readable pounds and ounces value, plus grams and kilograms.",
+    path: "/calculators/utility/weight-converter",
+    icon: Scale,
+    category: "utility",
+  },
+  {
     id: "cooking-converter",
     name: "Unit Converter",
     description: "Convert between cups, tablespoons, teaspoons, ml, grams and more.",
