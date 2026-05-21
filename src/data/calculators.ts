@@ -1,4 +1,4 @@
-import { Calculator, ChefHat, Clock, Percent, Ruler, Heart, DollarSign, MoveHorizontal, LucideIcon } from "lucide-react";
+import { Calculator, ChefHat, Clock, Percent, Ruler, Heart, DollarSign, MoveHorizontal, Scale, LucideIcon } from "lucide-react";
 
 export interface CalculatorInfo {
   id: string;
